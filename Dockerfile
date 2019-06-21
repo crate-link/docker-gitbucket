@@ -10,13 +10,13 @@ RUN set -x \
 
 FROM gcr.io/distroless/java:8
 
-COPY --from=0 /root/gitbucket.war /home/gitbucket.war
+COPY --from=0 /root/gitbucket.war /root/gitbucket.war
 
 EXPOSE 8080 8022
 
-VOLUME /home/.gitbucket
+VOLUME /root/.gitbucket
 
-WORKDIR /home
+WORKDIR /root
 
 CMD [ "gitbucket.war" ]
 
