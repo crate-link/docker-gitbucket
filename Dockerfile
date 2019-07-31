@@ -1,4 +1,4 @@
-FROM buildpack-deps:stretch-curl
+FROM buildpack-deps:buster-curl
 
 ENV GITBUCKET_VER=4.31.2 GITBUCKET_SUM=31614cdecd23948fa420d992999d279bd696897ca24387c07d7a0dfa1540ef5f
 
